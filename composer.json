@@ -1,0 +1,25 @@
+{
+    "name": "axguowen/lakala-sdk-php",
+    "description": "Lakala SDK for PHP",
+    "keywords": [
+        "lakala",
+        "sdk",
+        "php"
+    ],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "axguowen",
+            "email": "axguowen@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "axguowen/http-client": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "axguowen\\": "src"
+        }
+    }
+}
