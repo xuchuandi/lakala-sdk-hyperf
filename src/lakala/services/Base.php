@@ -6,13 +6,13 @@
 // +----------------------------------------------------------------------
 // | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
 // +----------------------------------------------------------------------
-// | Author: axguowen <axguowen@qq.com>
+// | Author: endness <endness@qq.com>
 // +----------------------------------------------------------------------
 
-namespace axguowen\lakala\services;
+namespace endness\lakala\services;
 
-use axguowen\HttpClient;
-use axguowen\lakala\utils\Str;
+use endness\HttpClient;
+use endness\lakala\utils\Str;
 
 abstract class Base
 {

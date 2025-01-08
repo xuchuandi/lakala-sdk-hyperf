@@ -6,12 +6,12 @@
 // +----------------------------------------------------------------------
 // | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
 // +----------------------------------------------------------------------
-// | Author: axguowen <axguowen@qq.com>
+// | Author: endness <endness@qq.com>
 // +----------------------------------------------------------------------
 
-namespace axguowen;
+namespace endness;
 
-use axguowen\lakala\utils\Str;
+use endness\lakala\utils\Str;
 
 /**
  * 拉卡拉SDK入口文件
@@ -29,7 +29,7 @@ class Lakala
      * @access public
      * @param string $name 服务名称
      * @param array $options 配置参数
-     * @return \axguowen\lakala\services\Base
+     * @return \endness\lakala\services\Base
      */
     public static function service($name, array $options = [])
     {

@@ -6,10 +6,10 @@
 // +----------------------------------------------------------------------
 // | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
 // +----------------------------------------------------------------------
-// | Author: axguowen <axguowen@qq.com>
+// | Author: endness <endness@qq.com>
 // +----------------------------------------------------------------------
 
-namespace axguowen\lakala\services;
+namespace endness\lakala\services;
 
 class AggregationCashdesk extends Base
 {

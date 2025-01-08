@@ -5,12 +5,12 @@
 
 ## 安装
 ~~~
-composer require axguowen/lakala-sdk-php
+composer require endness/lakala-sdk-php
 ~~~
 
 ## 使用
 ~~~php
-use axguowen\Lakala;
+use endness\Lakala;
 
 // 配置参数
 $config = [
@@ -82,7 +82,7 @@ gmsu/kd6eqxTs/JwdaIYr4sCMg8Z
 ];
 
 // 创建聚合收银台服务
-$aggregationCashdesk = \axguowen\Lakala::service('AggregationCashdesk', $config);
+$aggregationCashdesk = \endness\Lakala::service('AggregationCashdesk', $config);
 // 收银台订单创建
 $counterOrderSpecialCreate = $aggregationCashdesk->counterOrderSpecialCreate('order10102032033', 1599, '订单标题', [
     'notify_url' => 'http://xxx.xxx.com/notify',
