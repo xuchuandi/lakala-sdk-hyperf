@@ -1,6 +1,6 @@
 {
-    "name": "axguowen/lakala-sdk-php",
-    "description": "Lakala SDK for PHP",
+    "name": "endness/lakala-sdk-php",
+    "description": "拉卡拉官方支付phpSDK for Hyperf",
     "keywords": [
         "lakala",
         "sdk",
@@ -9,8 +9,8 @@
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "axguowen",
-            "email": "axguowen@qq.com"
+            "name": "Endness",
+            "email": "1764631452@qq.com"
         }
     ],
     "require": {
