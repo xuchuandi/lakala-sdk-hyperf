@@ -115,4 +115,32 @@ class AggregationCashdesk extends Base
             'req_data' => $reqData,
         ]);
     }
+
+
+    /**
+     * 收银台退货退单
+     * @access public
+     * @param string $outTradeNo 商户请求流水号
+     * @param string $refundAmount 退款金额
+     * @param string $requestIp 客户端真实IP
+     * @return array
+     * @link https://o.lakala.com/#/home/document/detail?id=892
+     */
+    public function tradeOrderRefund($outTradeNo,$refundAmount,$requestIp)
+    {
+        // 请求包体
+        $reqData = array_merge([
+            'merchant_no' => $this->options['merc_id'],
+            'term_no'     => $this->options['term_no'],
+        ], [
+            'out_trade_no'      => $outTradeNo,
+            'refund_amount'     => $refundAmount,
+            'location_info'     => ['request_ip'=>$requestIp],
+        ]);
+        return $this->post('/api/v3/rfd/refund_front/refund', [
+            'req_time' => date('YmdHis'),
+            'version' => $this->apiVersion,
+            'req_data' => $reqData,
+        ]);
+    }
 }
