@@ -140,6 +140,31 @@ class AggregationCashdesk extends Base
         return $this->post('/api/v3/rfd/refund_front/refund', [
             'req_time' => date('YmdHis'),
             'version' => $this->apiVersion,
+            'req_data' => $reqData
+        ]);
+    }
+
+    /**
+     * 收银台退货查询
+     * @access public
+     * @param string $outTradeNo 商户请求流水号
+     * @param string $tradeNo 拉卡拉交易流水号
+     * @return array
+     * @link https://o.lakala.com/#/home/document/detail?id=893
+     */
+    public function orderRefundQuery(string $outTradeNo,string $tradeNo = '')
+    {
+        // 请求包体
+        $reqData = array_merge([
+            'merchant_no' => $this->options['merc_id'],
+            'term_no'     => $this->options['term_no'],
+        ], [
+            'out_trade_no'      => $outTradeNo,
+            'trade_no'          => $tradeNo,
+        ]);
+        return $this->post('/api/v3/rfd/refund_front/refund_query', [
+            'req_time' => date('YmdHis'),
+            'version' => $this->apiVersion,
             'req_data' => $reqData,
         ]);
     }
